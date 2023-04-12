@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Retiro de empalme (Sin pedido de retiro)</title>
-    <link rel="stylesheet" href="CSS/style-retiro-de-empalme.css">
+    <title>Reingreso al anillo</title>
+    <link rel="stylesheet" href="CSS/style-reingreso-al-anillo.css">
     <link rel="icon" type="image/x-icon" href="/img/FAVICONxmen.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -93,69 +93,72 @@
 
     <section class="all-tiquetes">
         <fieldset class="parent">
-            <legend>RETIRO DE EMPALME (Sin pedido de retiro)</legend>
+            <legend>REINGRESO AL ANILLO</legend>
             <fieldset>
                 <legend>INGRESE DATOS</legend>
-                <div>
-                    <div>
+                <section class="ingresa-texto">
+                    <section>
                         <!-- <label for="input-data">Ingresa datos</label> -->
-                        <textarea class="input-data-text" id="inputText" cols="30" rows="9"></textarea>
-                    </div>
-                    <fieldset class="ingresa-texto">
-                        <div>
-                            <label for="retiro_anillo">ANILLO</label>
-                            <input id="retiro_anillo" type="text">
-                            <label for="retiro_ip1">IP SWITCH</label>
-                            <input type="text" id="retiro_ip" />
-                        </div>
-                        <div>
-                            <label for="retiro_ciudad">CIUDAD</label>
-                            <input id="retiro_ciudad" type="text">
-                            <label for="retiro_identificador">IDENTIFICADOR</label>
-                            <input id="retiro_identificador" type="text">
-                        </div>
-                        <div>
-                            <label for="retiro_nombre">NOMBRE</label>
-                            <input id="retiro_nombre" type="text">
-                            <label for="retiro_contacto">CONTACTO</label>
-                            <input id="retiro_contacto" type="text">
-                        </div>
-                        <div>
-                            <label for="retiro_telefono">TELÉFONO</label>
-                            <input id="retiro_telefono" type="text">
-                            <label for="retiro_direccion">DIRECCIÓN</label>
-                            <input id="retiro_direccion" type="text">
-                        </div>
-                        <div>
-                            <label for="">DISPONIBILIDAD:</label>
-                            <input type="datetime-local" name="" id="disponibilidad_AR" />
-                            <input type="datetime-local" name="" id="disponibilidad_A2R" />
-                        </div>
-                    </fieldset>
-                </div>
+                        <textarea class="input-data-text" id="inputTextRein" cols="30" rows="9"></textarea>
+                    </section>
+                    <section>
+                        <label for="rein_anillo">ANILLO</label>
+                        <input id="rein_anillo" type="text" />
+                        <label for="rein_ip">IP SWITCH</label>
+                        <input id="rein_ip" type="text" />
+                    </section>
+                    <section>
+                        <label for="rein_ciudad">CIUDAD</label>
+                        <input id="rein_ciudad" type="text" />
+                        <label for="rein_identificador">IDENTIFICADOR</label>
+                        <input id="rein_identificador" type="text" />
+                    </section>
+                    <section>
+                        <label for="rein_nombre">NOMBRE</label>
+                        <input id="rein_nombre" type="text" />
+                        <label for="rein_contacto">CONTACTO CLIENTE</label>
+                        <input id="rein_contacto" type="text" />
+                    </section>
+                    <section>
+                        <label for="rein_telefono">TELÉFONO</label>
+                        <input id="rein_telefono" type="text" />
+                        <label for="rein_direccion">DIRECCIÓN</label>
+                        <input id="rein_direccion" type="text" />
+                    </section>
+                    <section>
+                        <label for="">DISPONIBILIDAD</label>
+                        <input type="datetime-local" name="" id="disponibilidad_ARein" />
+                        <input type="datetime-local" name="" id="disponibilidad_A2Rein" />
+                    </section>
+                    <section class="descartes-container">
+                        <label for="rein_descartesreingreso">DESCARTES REALIZADOS</label>
+                        <p>Recuerde modificar o agregar las consideraciones de acuerdo al incidente</p>
+                        <textarea class="output_descartes" id="rein_descartesreingreso"></textarea>
+                    </section>
+                </section>
             </fieldset>
-
             <fieldset class="general-generator">
                 <legend>GENERADOR</legend>
-                <div class="button-container">
-                    <button id="nuevoR">Nuevo</button>
-                    <button id="generateCopyResumen">Copiar Resumen</button>
-                    <button id="generateCopyTT">Copiar TT</button>
-                </div>
-                <div>
+                <section class="button-container">
+                    <button id="nuevoRein">Nuevo</button>
+                    <button id="resumeRein">Copiar Resumen</button>
+                    <button id="descripcionRein">Copiar TT</button>
+                </section>
+                <section>
                     <h3>Resumen</h3>
-                    <textarea class="output-area-resumen-text" id="output-area-resumen" cols="30" rows="10"
+                    <textarea class="output-area-resumen-text" id="input_resumenRein" cols="30" rows="10"
                         readonly></textarea>
-                </div>
-                <div>
+                </section>
+                <section>
                     <h3>Descripción</h3>
-                    <textarea class="output-area-text" id="output-area-TT" cols="30" rows="10" readonly></textarea>
-                </div>
+                    <textarea class="output-area-text" id="input_descripcionRein" cols="30" rows="10"
+                        readonly></textarea>
+                </section>
             </fieldset>
         </fieldset>
     </section>
     <script src="JS/Generator.js"></script>
-    <script src="JS/retiro-de-empalme.js"></script>
+    <script src="JS/reingreso-anillo.js"></script>
 </body>
 
 </html>
